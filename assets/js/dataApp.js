@@ -99,9 +99,9 @@ export let datiFilm = [
                 percorsoImg: "assets/img/commedia.jpg"
             },
             {
-                titolo: "Titolo commedia 2",
-                descrizione: "Descrizione commedia 2",
-                recensione: "Non molto bello commedia 2",
+                titolo: "Titolo commedia 4",
+                descrizione: "Descrizione commedia 4",
+                recensione: "Non molto bello commedia 4",
                 stelle: 1,
                 percorsoImg: "assets/img/commedia.jpg"
             },
