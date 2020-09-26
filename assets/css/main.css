@@ -61,6 +61,10 @@ nav .logo span {
     letter-spacing: 5px;
 }
 
+#elenco-per-categoria .categoria .nome-categoria::first-letter {
+    text-transform: uppercase;
+}
+
 #elenco-per-categoria .categoria .fila-orizz {
     display: flex;
     flex-direction: row;
