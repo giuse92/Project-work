@@ -39,20 +39,41 @@ function intCtgre() {
 //Blocco per fila-orizz Interno Div Categorie
 function bloccoFilaOrizz() {
     let divFilaOrizzLista = document.querySelectorAll('#elenco-per-categoria .categoria .fila-orizz');
-    let nomeCtgraLista = document.querySelectorAll('#elenco-per-categoria .categoria .nome-categoria');
     
     for (let i = 0; i < divFilaOrizzLista.length; i++) {
         let divFilaOrizz = divFilaOrizzLista[i];
-        let strNomeCtgra = nomeCtgraLista[i].innerHTML;
+        //let strNomeCtgra = nomeCtgraLista[i].innerHTML;
         let datoFilm = datiFilm[i];
         
-        if (strNomeCtgra === datoFilm.categoria) {
-            for (let objMedia of datoFilm.media) {
-                for (let propMedia in objMedia) {
-                    divFilaOrizz.innerHTML += `${objMedia[propMedia]}<br>`
+        //if (strNomeCtgra === datoFilm.categoria) {
+        for (let objMedia of datoFilm.media) {
+            let divBlocco = document.createElement('div');
+            divBlocco.classList.add('blocco');
+            divFilaOrizz.append(divBlocco);
+
+            for (let propMedia in objMedia) {
+
+                if (propMedia === 'percorsoImg') {
+                    let percorsoImg = document.createElement('img');
+                    percorsoImg.src = objMedia[propMedia];
+                    percorsoImg.alt = objMedia.titolo;
+                    divBlocco.prepend(percorsoImg);
+                } else if (propMedia === 'stelle') {
+                    let spanStelle = document.createElement('span');
+                    spanStelle.className = "stelle";
+                    for (let n = 0; n < objMedia.stelle; n++) {
+                        spanStelle.innerHTML += "&#11088;";
+                    };
+                    divBlocco.prepend(spanStelle);
+                } else if (propMedia === 'titolo') {
+                    let pTitoloBlocco = document.createElement('p');
+                    pTitoloBlocco.className = "titolo-blocco";
+                    pTitoloBlocco.innerHTML = objMedia[propMedia];
+                    divBlocco.prepend(pTitoloBlocco);
                 }
             }
-        } 
+        }
+        //}
         
     }
 }
