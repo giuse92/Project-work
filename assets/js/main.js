@@ -71,12 +71,33 @@ function bloccoFilaOrizz() {
                     pTitoloBlocco.innerHTML = objMedia[propMedia];
                     divBlocco.prepend(pTitoloBlocco);
                 }
+
+                divBlocco.addEventListener('click', dettaglioRec);
             }
         }
         //}
         
     }
 }
+
+//Evento click blocco
+function dettaglioRec(ev) {
+    let recuperaSelector = ev.currentTarget.querySelector('p.titolo-blocco');
+    let recuperaTitolo = recuperaSelector.innerHTML;
+
+    for (let datiObj of datiFilm) {
+        for (let dettaglioObj of datiObj.media) {
+            if (recuperaTitolo === dettaglioObj.titolo) {
+                document.body.innerHTML = dettaglioObj.recensione + "<button>BACK</button>";
+            }
+        }
+    }
+
+    ev.currentTarget.removeEventListener('click', dettaglioRec);
+}
+
+//Costruisco il button BACK per il dettaglio
+
 
 //Richiamo funzioni
 costrfilaCtgre();

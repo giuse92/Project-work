@@ -1,7 +1,4 @@
 @media only screen and (max-width: 425px) {
-    nav {
-       z-index: 1; 
-    }
 
     #introduzione {
         padding: 25px 30px;
