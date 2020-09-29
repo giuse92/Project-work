@@ -80,24 +80,53 @@ function bloccoFilaOrizz() {
     }
 }
 
-//Evento click blocco
+//Costruisco dettaglio recensione
 function dettaglioRec(ev) {
+    let menuNav = document.querySelector('nav');
     let recuperaSelector = ev.currentTarget.querySelector('p.titolo-blocco');
     let recuperaTitolo = recuperaSelector.innerHTML;
+    let recuperaCtgra = ev.currentTarget.parentElement.previousElementSibling.innerHTML;
+    let sezDettaglio = document.createElement('section');
+    sezDettaglio.id = "dettaglio";
+    let titoloDettaglio = document.createElement('h1');
+    let descrizioneDettaglio = document.createElement('p');
+    let recensioneDettaglio = document.createElement('strong');
+    let buttonBackDettaglio = document.createElement('button');
+    buttonBackDettaglio.addEventListener('click', rimuoviSezDettaglio);
+    buttonBackDettaglio.innerHTML = "TORNA INDIETRO";
+    
+    sezDettaglio.append(titoloDettaglio, descrizioneDettaglio, recensioneDettaglio, buttonBackDettaglio);
+    menuNav.after(sezDettaglio);
 
     for (let datiObj of datiFilm) {
-        for (let dettaglioObj of datiObj.media) {
-            if (recuperaTitolo === dettaglioObj.titolo) {
-                document.body.innerHTML = dettaglioObj.recensione + "<button>BACK</button>";
+        if (recuperaCtgra === datiObj.categoria) {
+            for (let dettaglioObj of datiObj.media) {
+                if (recuperaTitolo === dettaglioObj.titolo) {
+                    titoloDettaglio.innerHTML = dettaglioObj.titolo;
+                    descrizioneDettaglio.innerHTML = dettaglioObj.descrizione;
+                    recensioneDettaglio.innerHTML = dettaglioObj.recensione;
+                }
             }
         }
-    }
+    };
 
-    ev.currentTarget.removeEventListener('click', dettaglioRec);
+    clickNoClick("none");
+
+};
+
+function clickNoClick (strValue) {
+    let divBlocchi = document.querySelectorAll('section div.blocco');
+
+    for (let blocco of divBlocchi) {
+        blocco.style.pointerEvents = strValue;
+    }
 }
 
-//Costruisco il button BACK per il dettaglio
-
+function rimuoviSezDettaglio(recuperaSez) {
+    recuperaSez = document.querySelector('section#dettaglio');
+    recuperaSez.remove();
+    clickNoClick("auto");
+};
 
 //Richiamo funzioni
 costrfilaCtgre();
