@@ -1,76 +1,76 @@
 export let datiFilm = [
     {
-        categoria: "horror",
+        categoria: "fantascienza",
         media: [
             {
-                titolo: "Titolo horror 1",
-                descrizione: "Descrizione horror 1",
-                recensione: "Non molto bello horror 1",
+                titolo: "Matrix",
+                descrizione: "Descrizione fantascienza 1",
+                recensione: "Non molto bello fantascienza 1",
                 stelle: 2,
-                percorsoImg: "assets/img/horror.jpg"
+                percorsoImg: "https://images-na.ssl-images-amazon.com/images/I/91BKjFYwvoL._AC_SY879_.jpg"
             },
             {
-                titolo: "Titolo horror 2",
-                descrizione: "Descrizione horror 2",
-                recensione: "Non molto bello horror 2",
+                titolo: "Avatar",
+                descrizione: "Descrizione fantascienza 2",
+                recensione: "Non molto bello fantascienza 2",
                 stelle: 5,
-                percorsoImg: "assets/img/horror.jpg"
+                percorsoImg: "https://movieplayer.net-cdn.it/images/2010/03/25/la-copertina-di-avatar-dvd-150956.jpg"
             },
             {
-                titolo: "Titolo horror 3",
-                descrizione: "Descrizione horror 3",
-                recensione: "Non molto bello horror 3",
+                titolo: "Rogue One",
+                descrizione: "Descrizione fantascienza 3",
+                recensione: "Non molto bello fantascienza 3",
                 stelle: 1,
-                percorsoImg: "assets/img/horror.jpg"
+                percorsoImg: "https://images-na.ssl-images-amazon.com/images/I/51TtZdJxXFL._SX324_BO1,204,203,200_.jpg"
             },
             {
-                titolo: "Titolo horror 4",
-                descrizione: "Descrizione horror 4",
-                recensione: "Non molto bello horror 4",
+                titolo: "Tron - Legacy",
+                descrizione: "Descrizione fantascienza 4",
+                recensione: "Non molto bello fantascienza 4",
                 stelle: 2,
-                percorsoImg: "assets/img/horror.jpg"
+                percorsoImg: "https://images-na.ssl-images-amazon.com/images/I/41ZaSR4KgIL._SX342_BO1,204,203,200_.jpg"
             },
             {
-                titolo: "Titolo horror 5",
-                descrizione: "Descrizione horror 5",
-                recensione: "Non molto bello horror 5",
+                titolo: "La guerra dei mondi",
+                descrizione: "Descrizione fantascienza 5",
+                recensione: "Non molto bello fantascienza 5",
                 stelle: 4,
-                percorsoImg: "assets/img/horror.jpg"
+                percorsoImg: "https://img.ibs.it/images/8010773100908_0_306_0_75.jpg"
             },
             {
-                titolo: "Titolo horror 6",
-                descrizione: "Descrizione horror 6",
-                recensione: "Non molto bello horror 6",
+                titolo: "Ready Player One",
+                descrizione: "Descrizione fantascienza 6",
+                recensione: "Non molto bello fantascienza 6",
                 stelle: 4,
-                percorsoImg: "assets/img/horror.jpg"
+                percorsoImg: "https://m.media-amazon.com/images/I/51HalpiSqgL.jpg"
             },
             {
-                titolo: "Titolo horror 7",
-                descrizione: "Descrizione horror 7",
-                recensione: "Non molto bello horror 7",
+                titolo: "Interstellar",
+                descrizione: "Descrizione fantascienza 7",
+                recensione: "Non molto bello fantascienza 7",
                 stelle: 3,
-                percorsoImg: "assets/img/horror.jpg"
+                percorsoImg: "https://m.media-amazon.com/images/I/51Q5MgobNsL.jpg"
             },
             {
-                titolo: "Titolo horror 8",
-                descrizione: "Descrizione horror 8",
-                recensione: "Non molto bello horror 8",
+                titolo: "Ad Astra",
+                descrizione: "Descrizione fantascienza 8",
+                recensione: "Non molto bello fantascienza 8",
                 stelle: 2,
-                percorsoImg: "assets/img/horror.jpg"
+                percorsoImg: "https://images-na.ssl-images-amazon.com/images/I/61adO29XhSL._SY445_.jpg"
             },
             {
-                titolo: "Titolo horror 9",
-                descrizione: "Descrizione horror 9",
-                recensione: "Non molto bello horror 9",
+                titolo: "Star Trek - Il futuro ha inizio",
+                descrizione: "Descrizione fantascienza 9",
+                recensione: "Non molto bello fantascienza 9",
                 stelle: 3,
-                percorsoImg: "assets/img/horror.jpg"
+                percorsoImg: "https://img.ibs.it/images/8010773105286_0_306_0_75.jpg"
             },
             {
-                titolo: "Titolo horror 10",
-                descrizione: "Descrizione horror 10",
-                recensione: "Non molto bello horror 10",
+                titolo: "Blade runner",
+                descrizione: "Descrizione fantascienza 10",
+                recensione: "Non molto bello fantascienza 10",
                 stelle: 2,
-                percorsoImg: "assets/img/horror.jpg"
+                percorsoImg: "https://i.etsystatic.com/20343000/r/il/f7a1ed/1946083803/il_570xN.1946083803_mf7q.jpg"
             }
         ]
     },
@@ -78,32 +78,32 @@ export let datiFilm = [
         categoria: "commedia",
         media: [
             {
-                titolo: "Titolo commedia 1",
+                titolo: "Old Man & The Gun",
                 descrizione: "Descrizione commedia 1",
                 recensione: "Non molto bello commedia 1",
                 stelle: 4,
-                percorsoImg: "assets/img/commedia.jpg"
+                percorsoImg: "https://pad.mymovies.it/filmclub/2017/05/163/locandina.jpg"
             },
             {
-                titolo: "Titolo commedia 2",
+                titolo: "Tutto può accadere a Broadway",
                 descrizione: "Descrizione commedia 2",
                 recensione: "Non molto bello commedia 2",
                 stelle: 2,
-                percorsoImg: "assets/img/commedia.jpg"
+                percorsoImg: "https://pad.mymovies.it/filmclub/2014/07/173/locandina.jpg"
             },
             {
-                titolo: "Titolo commedia 3",
+                titolo: "Tolo Tolo",
                 descrizione: "Descrizione commedia 3",
                 recensione: "Non molto bello commedia 3",
                 stelle: 3,
-                percorsoImg: "assets/img/commedia.jpg"
+                percorsoImg: "https://pad.mymovies.it/filmclub/2019/02/007/locandina.jpg"
             },
             {
-                titolo: "Titolo commedia 4",
+                titolo: "Gloria Bell",
                 descrizione: "Descrizione commedia 4",
                 recensione: "Non molto bello commedia 4",
                 stelle: 1,
-                percorsoImg: "assets/img/commedia.jpg"
+                percorsoImg: "https://pad.mymovies.it/filmclub/2018/11/088/locandina.jpg"
             },
         ]
     },
@@ -111,25 +111,25 @@ export let datiFilm = [
         categoria: "drammatico",
         media: [
             {
-                titolo: "Titolo drammatico 1",
+                titolo: "Waiting for the barbarians",
                 descrizione: "Descrizione drammatico 1",
                 recensione: "Non molto bello drammatico 1",
                 stelle: 5,
-                percorsoImg: "assets/img/drammatico.jpg"
+                percorsoImg: "https://scontent.ccdn.cloud/image/nospoiler/9e78490e-b377-46d2-b1cd-58d2c6274176/waiting-for-the-barbarians-poster-2-384x576.jpg"
             },
             {
-                titolo: "Titolo drammatico 2",
+                titolo: "Padrenostro",
                 descrizione: "Descrizione drammatico 2",
                 recensione: "Non molto bello drammatico 2",
                 stelle: 2,
-                percorsoImg: "assets/img/drammatico.jpg"
+                percorsoImg: "https://pad.mymovies.it/img/image/?size=400&image=https://pad.mymovies.it/cinemanews/2020/169853/locandina-ver.jpg"
             },
             {
-                titolo: "Titolo drammatico 3",
+                titolo: "Tenet",
                 descrizione: "Descrizione drammatico 3",
                 recensione: "Non molto bello drammatico 3",
                 stelle: 1,
-                percorsoImg: "assets/img/drammatico.jpg"
+                percorsoImg: "https://pad.mymovies.it/filmclub/2019/10/296/locandina.jpg"
             }
         ]
     }

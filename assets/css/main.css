@@ -5,6 +5,7 @@
 body {
     margin: 0;
     z-index: 0;
+    box-sizing: border-box;
 }
 
 nav {
@@ -81,6 +82,7 @@ nav .logo span {
     margin-right: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 160px;
 }
 
 #elenco-per-categoria .categoria .fila-orizz > .blocco:hover {
