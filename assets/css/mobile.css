@@ -3,4 +3,13 @@
     #introduzione {
         padding: 25px 30px;
     }
+
+    #elenco-per-categoria .categoria .nome-categoria::after {
+        content: url('../img/swipe.png');
+    }
+
+    section#dettaglio h1 {
+        padding: 60px 10px;
+        font-size: 35px;
+    }
 }

@@ -78,7 +78,7 @@ export let datiFilm = [
         categoria: "commedia",
         media: [
             {
-                titolo: "Old Man & The Gun",
+                titolo: "Old Man &amp; The Gun",
                 descrizione: "Descrizione commedia 1",
                 recensione: "Non molto bello commedia 1",
                 stelle: 4,
@@ -105,6 +105,48 @@ export let datiFilm = [
                 stelle: 1,
                 percorsoImg: "https://pad.mymovies.it/filmclub/2018/11/088/locandina.jpg"
             },
+            {
+                titolo: "Gloria Bell",
+                descrizione: "Descrizione commedia 4",
+                recensione: "Non molto bello commedia 4",
+                stelle: 4,
+                percorsoImg: "https://pad.mymovies.it/filmclub/2018/11/088/locandina.jpg"
+            },
+            {
+                titolo: "Gloria Bell",
+                descrizione: "Descrizione commedia 4",
+                recensione: "Non molto bello commedia 4",
+                stelle: 3,
+                percorsoImg: "https://pad.mymovies.it/filmclub/2018/11/088/locandina.jpg"
+            },
+            {
+                titolo: "Gloria Bell",
+                descrizione: "Descrizione commedia 4",
+                recensione: "Non molto bello commedia 4",
+                stelle: 5,
+                percorsoImg: "https://pad.mymovies.it/filmclub/2018/11/088/locandina.jpg"
+            },
+            {
+                titolo: "Gloria Bell",
+                descrizione: "Descrizione commedia 4",
+                recensione: "Non molto bello commedia 4",
+                stelle: 1,
+                percorsoImg: "https://pad.mymovies.it/filmclub/2018/11/088/locandina.jpg"
+            },
+            {
+                titolo: "Gloria Bell",
+                descrizione: "Descrizione commedia 4",
+                recensione: "Non molto bello commedia 4",
+                stelle: 3,
+                percorsoImg: "https://pad.mymovies.it/filmclub/2018/11/088/locandina.jpg"
+            },
+            {
+                titolo: "Gloria Bell",
+                descrizione: "Descrizione commedia 4",
+                recensione: "Non molto bello commedia 4",
+                stelle: 5,
+                percorsoImg: "https://pad.mymovies.it/filmclub/2018/11/088/locandina.jpg"
+            }
         ]
     },
     {
@@ -123,6 +165,55 @@ export let datiFilm = [
                 recensione: "Non molto bello drammatico 2",
                 stelle: 2,
                 percorsoImg: "https://pad.mymovies.it/img/image/?size=400&image=https://pad.mymovies.it/cinemanews/2020/169853/locandina-ver.jpg"
+            },
+            {
+                titolo: "Tenet",
+                descrizione: "Descrizione drammatico 3",
+                recensione: "Non molto bello drammatico 3",
+                stelle: 1,
+                percorsoImg: "https://pad.mymovies.it/filmclub/2019/10/296/locandina.jpg"
+            },
+            {
+                titolo: "Tenet",
+                descrizione: "Descrizione drammatico 3",
+                recensione: "Non molto bello drammatico 3",
+                stelle: 1,
+                percorsoImg: "https://pad.mymovies.it/filmclub/2019/10/296/locandina.jpg"
+            },
+            {
+                titolo: "Tenet",
+                descrizione: "Descrizione drammatico 3",
+                recensione: "Non molto bello drammatico 3",
+                stelle: 1,
+                percorsoImg: "https://pad.mymovies.it/filmclub/2019/10/296/locandina.jpg"
+            },
+            {
+                titolo: "Tenet",
+                descrizione: "Descrizione drammatico 3",
+                recensione: "Non molto bello drammatico 3",
+                stelle: 1,
+                percorsoImg: "https://pad.mymovies.it/filmclub/2019/10/296/locandina.jpg"
+            },
+            {
+                titolo: "Tenet",
+                descrizione: "Descrizione drammatico 3",
+                recensione: "Non molto bello drammatico 3",
+                stelle: 1,
+                percorsoImg: "https://pad.mymovies.it/filmclub/2019/10/296/locandina.jpg"
+            }, 
+            {
+                titolo: "Tenet",
+                descrizione: "Descrizione drammatico 3",
+                recensione: "Non molto bello drammatico 3",
+                stelle: 1,
+                percorsoImg: "https://pad.mymovies.it/filmclub/2019/10/296/locandina.jpg"
+            },
+            {
+                titolo: "Tenet",
+                descrizione: "Descrizione drammatico 3",
+                recensione: "Non molto bello drammatico 3",
+                stelle: 1,
+                percorsoImg: "https://pad.mymovies.it/filmclub/2019/10/296/locandina.jpg"
             },
             {
                 titolo: "Tenet",

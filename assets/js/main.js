@@ -80,20 +80,24 @@ function bloccoFilaOrizz() {
     }
 }
 
-//Costruisco dettaglio recensione
+//Costruisco pop-up dettaglio recensione
 function dettaglioRec(ev) {
     let menuNav = document.querySelector('nav');
     let recuperaSelector = ev.currentTarget.querySelector('p.titolo-blocco');
     let recuperaTitolo = recuperaSelector.innerHTML;
     let recuperaCtgra = ev.currentTarget.parentElement.previousElementSibling.innerHTML;
+    let recuperaSrcImg = ev.currentTarget.querySelector('img').getAttribute('src');
     let sezDettaglio = document.createElement('section');
     sezDettaglio.id = "dettaglio";
     let titoloDettaglio = document.createElement('h1');
+    titoloDettaglio.style.backgroundImage = `linear-gradient(to right, rgba(9, 105, 184, 0.6), rgba(3, 37, 65, 0.6)), url('${recuperaSrcImg}')`;
+    titoloDettaglio.style.backgroundSize = "cover";
+    titoloDettaglio.style.backgroundPosition = "center";
     let descrizioneDettaglio = document.createElement('p');
     let recensioneDettaglio = document.createElement('strong');
     let buttonBackDettaglio = document.createElement('button');
     buttonBackDettaglio.addEventListener('click', rimuoviSezDettaglio);
-    buttonBackDettaglio.innerHTML = "TORNA INDIETRO";
+    buttonBackDettaglio.innerHTML = "BACK";
     
     sezDettaglio.append(titoloDettaglio, descrizioneDettaglio, recensioneDettaglio, buttonBackDettaglio);
     menuNav.after(sezDettaglio);
@@ -114,6 +118,8 @@ function dettaglioRec(ev) {
 
 };
 
+//Blocco ogni evento mouse sui blocchi in elenco a pop-up attivo 
+//e 
 function clickNoClick (strValue) {
     let divBlocchi = document.querySelectorAll('section div.blocco');
 
