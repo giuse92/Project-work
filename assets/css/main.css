@@ -112,7 +112,7 @@ section#dettaglio {
     z-index: 1;
     left: 50%;
     top: 50%;
-    border: 1px solid black;
+    border: 2px solid black;
     width: 70%;
     margin: 0 auto;
     text-align: center;
@@ -124,14 +124,22 @@ section#dettaglio h1 {
     padding: 60px 10px;
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #ccc;    
+    color: #fff;    
     text-shadow: 2px 2px 10px rgb(3, 37, 65);
+}
+
+section#dettaglio p, section#dettaglio strong {
+    padding: 0 25px;
 }
 
 section#dettaglio button {
     display: block;
     margin: 5px auto;
     padding: 25px;
+    border-radius: 1em;
+    font: menu;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 footer {

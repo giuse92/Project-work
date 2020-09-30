@@ -12,4 +12,8 @@
         padding: 60px 10px;
         font-size: 35px;
     }
+
+    section#dettaglio p, section#dettaglio strong {
+    padding: 0 10px;
+}
 }
