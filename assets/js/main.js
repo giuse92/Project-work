@@ -94,7 +94,8 @@ function dettaglioRec(ev) {
     titoloDettaglio.style.backgroundSize = "cover";
     titoloDettaglio.style.backgroundPosition = "center";
     let descrizioneDettaglio = document.createElement('p');
-    let recensioneDettaglio = document.createElement('strong');
+    let recensioneDettaglio = document.createElement('q');
+    recensioneDettaglio.setAttribute('style', 'font-style: italic; font-weight: bold');
     let buttonBackDettaglio = document.createElement('button');
     buttonBackDettaglio.addEventListener('click', rimuoviSezDettaglio);
     buttonBackDettaglio.innerHTML = "BACK";
