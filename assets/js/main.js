@@ -1,4 +1,10 @@
-import {datiFilm} from './dataApp.js';
+let datiFilm;
+
+fetch('assets/js/dataApp.json')
+.then(response => response.json())
+.then(data => {
+    datiFilm = data;
+    costrfilaCtgre()})
 
 //Costruisco Fila Categorie
 function costrfilaCtgre() {
@@ -136,4 +142,4 @@ function rimuoviSezDettaglio(recuperaSez) {
 };
 
 //Richiamo funzioni
-costrfilaCtgre();
+//costrfilaCtgre();
