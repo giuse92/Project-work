@@ -101,7 +101,7 @@ export let datiFilm = [
             {
                 titolo: "Gloria Bell",
                 descrizione: "Julianne Moore è Gloria Bell, una donna forte e fragile insieme che sa risolversi quando tutto sembra affondare, che ha la capacità di ripartire, di ritornare in pista e di danzare. Ancora. Commedia, USA 2018. Durata 102 Minuti.",
-                recensione: "Non molto bello commedia 4",
+                recensione: "se vi aspettate colpi di scena amorosi o rivelazioni inquietanti rimarrete delusissimi. A meno che non abbiate già visto Gloria, il film del 2013 diretto da Sebastián Lelio, di cui questo film è il remake americano.",
                 stelle: 1,
                 percorsoImg: "https://pad.mymovies.it/filmclub/2018/11/088/locandina.jpg"
             },
