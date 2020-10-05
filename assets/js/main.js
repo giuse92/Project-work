@@ -10,7 +10,7 @@ fetch('assets/js/dataApp.json')
 function costrfilaCtgre() {
     let sezioneElencoCategoria = document.querySelector('section#elenco-per-categoria');
 
-    for (let i = 0; i < datiFilm.length; i++) {
+    for (let i = 0; i < datiFilm.dettaglio.length; i++) {
 
         let divCtgra = document.createElement('div');
         divCtgra.className = "categoria";
@@ -31,7 +31,7 @@ function intCtgre() {
         
         let nomeCtgra = document.createElement('h2');
         nomeCtgra.className = "nome-categoria";
-        nomeCtgra.innerHTML = datiFilm[i].categoria;
+        nomeCtgra.innerHTML = datiFilm.dettaglio[i].categoria;
 
         divCatgra.append(nomeCtgra);
 
@@ -49,7 +49,7 @@ function bloccoFilaOrizz() {
     for (let i = 0; i < divFilaOrizzLista.length; i++) {
         let divFilaOrizz = divFilaOrizzLista[i];
         //let strNomeCtgra = nomeCtgraLista[i].innerHTML;
-        let datoFilm = datiFilm[i];
+        let datoFilm = datiFilm.dettaglio[i];
         
         //if (strNomeCtgra === datoFilm.categoria) {
         for (let objMedia of datoFilm.media) {
@@ -109,7 +109,7 @@ function dettaglioRec(ev) {
     sezDettaglio.append(titoloDettaglio, descrizioneDettaglio, recensioneDettaglio, buttonBackDettaglio);
     menuNav.after(sezDettaglio);
 
-    for (let datiObj of datiFilm) {
+    for (let datiObj of datiFilm.dettaglio) {
         if (recuperaCtgra === datiObj.categoria) {
             for (let dettaglioObj of datiObj.media) {
                 if (recuperaTitolo === dettaglioObj.titolo) {
