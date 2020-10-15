@@ -12,6 +12,7 @@ fetch('assets/js/dataApp.json')
         };
     })
     .then(data => {
+        //if (data !== undefined) {
         let datiFilm = data;
         costrfilaCtgre();
 
@@ -149,4 +150,6 @@ fetch('assets/js/dataApp.json')
             recuperaSez.remove();
             clickNoClick("auto");
         };
-    });
+    //}
+    })
+    .catch(error => console.log("SONO UN ERRORE: ", error))
