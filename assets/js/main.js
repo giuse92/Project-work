@@ -77,9 +77,10 @@ fetch('assets/js/dataApp.json')
                         } else if (propMedia === 'stelle') {
                             let spanStelle = document.createElement('span');
                             spanStelle.className = "stelle";
-                            for (let n = 0; n < objMedia.stelle; n++) {
+                            /*for (let n = 0; n < objMedia.stelle; n++) {
                                 spanStelle.innerHTML += "&#11088;";
-                            };
+                            };*/
+                            spanStelle.innerHTML = '⭐'.repeat(objMedia.stelle)
                             divBlocco.prepend(spanStelle);
                         } else if (propMedia === 'titolo') {
                             let pTitoloBlocco = document.createElement('p');
