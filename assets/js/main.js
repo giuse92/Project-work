@@ -1,11 +1,12 @@
-fetch('assets/js/dataApp.json')
-//https://raw.githubusercontent.com/giuse92/Project-work/json/assets/js/dataApp.json
+fetch('https://raw.githubusercontent.com/giuse92/Project-work/json/assets/js/dataApp.json')
+//assets/js/dataApp.json
     .then(response => {
         if (response.ok) {
             return response.json();
-        } else {
+        } 
+        else {
             let elencoCategoria = document.querySelector('#elenco-per-categoria');
-            elencoCategoria.innerHTML = "Ops, qualcosa è andato storto...";
+            elencoCategoria.innerHTML = `Ops, qualcosa è andato storto... <br> Codice errore: ${response.status} <br> Stato errore: ${response.statusText}`;
             elencoCategoria.setAttribute('style', 'font-size: 25px; color: red; font-weight: 700');
             elencoCategoria.style.textAlign = "center";
             elencoCategoria.style.padding = "15px 5px";
@@ -153,4 +154,7 @@ fetch('assets/js/dataApp.json')
         };
     //}
     })
-    .catch(error => console.log("SONO UN ERRORE: ", error))
+    .catch(error => {
+        console.log("SONO UN ERRORE: ", error)
+
+    })
