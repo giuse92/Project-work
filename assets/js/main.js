@@ -112,8 +112,8 @@ fetch('https://raw.githubusercontent.com/giuse92/Project-work/json/assets/js/dat
             titoloDettaglio.style.backgroundSize = "cover";
             titoloDettaglio.style.backgroundPosition = "center";
             let descrizioneDettaglio = document.createElement('p');
-            let recensioneDettaglio = document.createElement('q');
-            recensioneDettaglio.setAttribute('style', 'font-style: italic; font-weight: bold');
+            let recensioneDettaglio = document.createElement('blockquote');
+            //recensioneDettaglio.setAttribute('style', 'font-style: italic; font-weight: bold');
             let buttonBackDettaglio = document.createElement('button');
             buttonBackDettaglio.addEventListener('click', rimuoviSezDettaglio);
             buttonBackDettaglio.innerHTML = "BACK";
@@ -138,7 +138,7 @@ fetch('https://raw.githubusercontent.com/giuse92/Project-work/json/assets/js/dat
         };
 
         //Blocco ogni evento mouse sui blocchi in elenco a pop-up attivo 
-        //e 
+        //e ripristino eventi mouse sui div con il click sul tasto BACK
         function clickNoClick(strValue) {
             let divBlocchi = document.querySelectorAll('section div.blocco');
 
@@ -156,5 +156,4 @@ fetch('https://raw.githubusercontent.com/giuse92/Project-work/json/assets/js/dat
     })
     .catch(error => {
         console.log("SONO UN ERRORE: ", error)
-
     })

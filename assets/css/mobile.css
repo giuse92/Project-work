@@ -9,11 +9,24 @@
     }
 
     section#dettaglio h1 {
-        padding: 60px 10px;
+        padding: 30px 10px;
         font-size: 35px;
     }
 
-    section#dettaglio p, section#dettaglio strong {
-    padding: 0 10px;
-}
+    section#dettaglio p, section#dettaglio blockquote {
+        margin: 25px auto;
+        padding: 3px 10px;
+        font-size: 20px;
+    }
+
+    section#dettaglio p {
+        height: 50px;
+        overflow-y: scroll;
+        
+    }
+
+    section#dettaglio blockquote {
+        height: 100px;
+        overflow-y: scroll;
+    }
 }
